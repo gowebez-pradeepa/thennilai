@@ -1,0 +1,20 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+button{
+    font-family: 'Varela', sans-serif !important;
+}
+.offcanvas{
+    background-color: rgba($color: $navbar-clr, $alpha: .9) !important;
+    .active{
+        color: black !important;
+    }
+    .nav-item a{
+        &:hover{
+            color: black !important;
+        }
+    }
+}

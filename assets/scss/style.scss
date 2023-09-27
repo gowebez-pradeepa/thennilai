@@ -1,0 +1,718 @@
+@import './abstracts/variables';
+@import './mixins/breakpoints';
+@import './abstracts/common';
+@import './includes/header';
+@import './includes/footer';
+
+// banner
+.image {
+    background-image: url(/public/images/imaze.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Varela', sans-serif;
+}
+
+.image-font {
+    font-family: 'Cinzel';
+    font-size: 25px;
+
+    @include media-min-sm {
+        font-size: 35px;
+    }
+
+    @include media-min-lg {
+        font-size: 95px;
+    }
+}
+
+.image-perfect {
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    font-weight: 100;
+
+    @include media-min-lg {
+        font-size: 57px;
+    }
+
+}
+
+.btn-book {
+    font-family: 'Varela';
+    color: #000;
+    font-size: 12px;
+
+    @include media-min-lg {
+        font-size: 18px;
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: #fff;
+
+
+    }
+}
+
+.border-line {
+    @include media-min-lg {
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+
+    }
+
+}
+
+// banner ends
+// about starts
+.about-wrapper {
+    background-color: #c7c0c0;
+
+}
+
+.about-color {
+    background-color: #fff;
+
+    @include media-min-lg {
+        position: absolute;
+        right: 15%;
+        left: 35%;
+        top: 24.1%;
+
+        // border: 1px solid black;
+    }
+}
+
+.about-para {
+    font-family: 'Varela';
+    font-size: 20px;
+    line-height: 2;
+    word-spacing: 3;
+    text-align: justify;
+
+}
+
+.btn-black {
+    color: #fff;
+    background-color: #000;
+    font-size: 12px;
+    border: none;
+
+    @include media-min-lg {
+        font-size: 18px;
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: #000;
+        border: 2px solid grey;
+    }
+}
+
+.about-icon {
+    font-size: 12px;
+}
+
+// about ends
+// next wrpper starts
+.next-wrapper {
+    background-image: url(/public/images/section\ 3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Varela', sans-serif;
+
+
+}
+
+// common
+h2 {
+    font-size: 25px;
+    font-family: 'Varela';
+
+    @include media-min-lg {
+        font-size: 57px;
+    }
+}
+
+.next-color {
+    background-color: red;
+    padding: 9px 12px;
+}
+
+.next-color1 {
+    background-color: red;
+    padding: 10px 8px;
+}
+
+.next-color2 {
+    background-color: red;
+    padding: 4px 4px;
+}
+
+// pricing section starts
+.pricing-wrapper {
+    background-image: url(/public/images/section\ 4.jpg);
+    background-size: cover;
+
+}
+
+.price-color {
+    background-color: #faf6f6;
+}
+
+.price-image img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.testi-image img {
+    width: 130px;
+    height: 130px;
+    top: 75%;
+    left: 28%;
+}
+
+.testi-image img {
+    @include media-min-sm {
+
+        top: 61%;
+        left: 39%;
+    }
+
+    @include media-min-lg {
+        top: 63%;
+        left: 34%;
+    }
+}
+
+.p-cr {
+    border: 1px dotted grey
+}
+
+
+// testimonial starts
+.testi-wrapper {
+    background-image: url(/public/images/section\ 5.jpg);
+    background-size: cover;
+
+}
+
+.testi-color {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+// testi ends
+// contact starts
+.contact-wrapper {
+    background-image: url(/public/images/section\ 6.jpg);
+    background-size: cover;
+
+    @include media-min-lg {
+        padding: 4rem 11.5rem;
+    }
+
+}
+
+.contact-color {
+    background-color: #fff;
+}
+
+.btn-red {
+    background-color: red;
+    color: #fff;
+    font-family: 'varela';
+    border: none;
+
+    &:hover {
+        background: transparent;
+        color: #000;
+        border: 2px solid grey;
+    }
+}
+
+.btn-red1 {
+    background-color: red;
+    color: #fff;
+    font-family: 'varela';
+    border: none;
+
+    &:hover {
+        background: transparent;
+        color: #fff;
+        border: 2px solid grey;
+    }
+}
+
+.contact-border {
+    border-radius: 50%;
+    background-color: red;
+    padding: 10px;
+}
+
+// footer starts
+.footer-wrapper {
+    background-image: url(/public/images/section\ 7.jpg);
+    background-size: cover;
+}
+
+.all-paras {
+    font-size: 20px;
+    line-height: 2;
+    word-spacing: 3;
+    text-align: justify;
+    font-family: 'Varela';
+    font-weight: 100;
+}
+
+.foot-light {
+    font-weight: 100;
+}
+
+// .container{
+//      --bs-gutter-x: 0 !important;}
+
+.row {
+    --bs-gutter-x: 0 !important;
+}
+
+// about-border
+.about-image {
+    @include media-min-lg {
+        // box-shadow: -48px -48px rgba(78, 16, 16, );
+    }
+
+    @include media-min-lg {
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+    }
+}
+
+.form-card {
+    width: 75%;
+}
+
+.icon-back {
+    background-color: red;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.icon-back1 {
+    background-color: red;
+    padding: 8px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px
+}
+
+.border-dot {
+    border: 1px dotted #000;
+}
+
+/////// About-section starts//////////
+.welocome-wrapper {
+    background-image: url(/public/images/asss.jpg);
+    background-size: cover;
+}
+
+.about-color2 {
+    @include media-min-lg {
+        background: linear-gradient(to left, #f7edd3 50%, #f1f1ef 50%)
+    }
+}
+
+.about-color3 {
+    @include media-min-lg {
+        background: linear-gradient(to left, #000 50%, #f1f1ef 50%)
+    }
+}
+
+.about-secimage img {
+
+    @include media-min-lg {
+        position: absolute;
+        top: 35%;
+        right: 12%;
+    }
+
+    @include media-min-xl {
+        position: absolute;
+        top: 18%;
+        right: 8%;
+    }
+
+    @include media-min-xxl {
+        position: absolute;
+        top: 15%;
+        right: 12%;
+    }
+
+    // @include media-min-md{
+    //     position: absolute;
+    //     top:30%;
+    // }
+}
+
+.story-wrapper {
+    background-image: url(/public/images/a11.jpg);
+    background-size: cover;
+}
+
+.icon-circle {
+    border-radius: 50%;
+    border: 1px solid rgb(243, 236, 236);
+    padding: 10px;
+}
+
+.contact-font {
+    font-family: 'Cinzel';
+    font-size: 25px;
+
+    @include media-min-lg {
+        font-size: 60px;
+        font-family: 'Cinzel';
+    }
+}
+
+.icon-con {
+    padding: 15px 14px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.icon-con1 {
+    padding: 13px 16px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.bookap-wrapper {
+    background-image: url(/public/images/con1\ \(2\).jpg);
+    background-size: cover;
+}
+
+.overall-border {
+    @include media-min-lg {
+        border: 1px solid #fff;
+    }
+
+}
+
+.head-weight {
+    font-weight: 400;
+}
+
+.word-space {
+    word-spacing: 2px;
+}
+
+// portfolio
+.port-image {
+    background-image: url(/public/images/Portfolio.jpg);
+    background-size: cover;
+
+}
+
+.port-wrapper {
+    background-color: #000;
+}
+
+// plan price
+
+
+.carousel-control-prev {
+    @include media-min-lg {
+        left: -52px !important;
+    }
+}
+
+.carousel-control-next {
+    @include media-min-lg {
+        right: -52px !important;
+    }
+}
+
+.img-txt {
+    background-color: #e9e8e8;
+    width: 70%;
+    position: relative;
+    bottom: 55px;
+}
+
+// service
+.about-secimages {
+    .img-b {
+
+        @include media-min-lg {
+            position: absolute;
+            top: 23%;
+            right: 7%;
+        }
+
+        @include media-min-xl {
+            position: absolute;
+            top: 14%;
+            right: 8%;
+        }
+
+        @include media-min-xxl {
+            position: absolute;
+            top: -246px;
+            right: 2%;
+            padding: 8rem;
+        }
+
+        // @include media-min-md{
+        //     position: absolute;
+        //     top:30%;
+        // }
+
+    }
+
+    .img-f {
+        @include media-min-lg {
+            position: absolute;
+            right: 0;
+            left: -110px;
+            top: 243px;
+            padding: 4rem;
+        }
+
+        @include media-min-xl {
+            position: absolute;
+            right: 0;
+            left: -154px;
+            top: 177px;
+            padding: 6rem;
+        }
+    }
+
+    @include media-min-xxl {
+        position: absolute;
+            right: 0;
+            left: -154px;
+            top: 177px;
+            padding: 7rem;
+    }
+}
+
+// what-wrapper
+.service-section3 {
+    background-color: #000;
+    font-family: 'Varela', sans-serif;
+
+    img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+
+    .line-btm {
+        border-bottom: 1px solid;
+    }
+
+    span {
+        background-color: rgb(253, 0, 106);
+        ;
+        border-radius: 50%;
+        padding: 10px 0 10px 8px;
+    }
+
+    .rotate-txt {
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        letter-spacing: 15px;
+    }
+}
+
+.offer-wrapper {
+    background-image: url(/public/images/ser3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Varela', sans-serif;
+
+    .j-p {
+        text-align: justify;
+    }
+
+    .br-line {
+        border-bottom: 1px solid;
+    }
+
+    .st-line {
+        border-left: 2px solid;
+    }
+
+    span {
+        background-color: #FD006A;
+        border-radius: 50%;
+        padding: 12px 2px 12px 10px;
+    }
+}
+
+// plan
+.plan-wrapper {
+    background-image: url(/public/images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .pricing-section2 {
+        background-image: url(/public/images/pr2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .c-br {
+        border-bottom: 1px dotted;
+    }
+
+    .head-br,
+    .head-br2,
+    .head-br3 {
+        border-bottom: 1px solid;
+    }
+
+    .head-br {
+        @include media-min-lg {
+            width: 31%;
+        }
+    }
+
+    .head-br2 {
+        @include media-min-lg {
+            width: 50%;
+        }
+
+        @include media-min-xl {
+            width: 47%;
+        }
+    }
+
+    .head-br3 {
+        @include media-min-lg {
+            width: 64%;
+        }
+    }
+}
+
+// package
+.pricing-package {
+    background-image: url(/public/images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .btm-br {
+        border-top: 1px solid !important;
+    }
+
+    button {
+        background-color: red;
+    }
+
+    p {
+        color: rgb(219, 216, 216);
+    }
+
+    .clr-red {
+        color: #fa6e6eb9;
+    }
+}
+
+.get-wrapper {
+    background-image: url(/public/images/pr3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-pink {
+    border: 1px solid #fff;
+    background: linear-gradient(90deg, #FD006A 0%, #D700B5 100%);
+    border-radius: none;
+
+}
+
+.btn-pink:active {
+    border: 1px solid #fff;
+    background: linear-gradient(90deg, #FD006A 0%, #D700B5 100%);
+
+}
+
+.btn-pink1 {
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+
+    &:hover {
+        background: linear-gradient(90deg, #FD006A 0%, #D700B5 100%);
+    }
+
+}
+
+.pause {
+    font-family: 'varela';
+}
+
+.carousel-control-next-icon {
+    @include media-min-lg {
+        background-image: url(/public/images/next\ \(3\).png) !important;
+    }
+}
+
+.carousel-control-prev-icon {
+    @include media-min-lg {
+        background-image: url(/public/images/left.png) !important;
+    }
+}
+
+.abouted-image {
+    background-image: url(/public/images/a10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.get-head {
+    font-size: 23px;
+
+    @include media-min-lg {
+        font-size: 60px;
+    }
+}
+
+.ser-image {
+    background-image: url(/public/images/ser2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pricing-image {
+    background-image: url(/public/images/pr1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back-border {
+    @include media-min-lg {
+        border: 1px solid #fff;
+
+    }
+}
+
+.map-boss {
+    padding-left: 8rem;
+}
+
+.head-weight1 {
+    font-weight: 500;
+}
